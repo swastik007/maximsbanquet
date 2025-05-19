@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
+
 .header.transparent-header {
   background: transparent;
   position: absolute;
@@ -131,4 +140,4 @@
 .main-slider .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=theme.css.map */
