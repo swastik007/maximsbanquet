@@ -13,6 +13,8 @@ get_header();
 		<!-- top-slider section area -->
     	<?php get_template_part( 'template-parts/slider', 'none' ); ?>
     	<!-- top-slider section area --> 
+		
+    	<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
 
 	</main><!-- #main -->
 
