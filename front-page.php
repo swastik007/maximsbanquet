@@ -13,6 +13,7 @@ get_header();
 		<!-- top-slider section area -->
     	
     	<!-- top-slider section area --> 
+		<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
 		
     	<!-- top-slider section area --> 
     	<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
@@ -28,6 +29,9 @@ get_header();
 
 		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
 		<?php get_template_part( 'template-parts/our-team', 'none' ); ?>
+		<?php get_template_part( 'template-parts/banner', 'none' ); ?>
+		<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
+		<?php get_template_part( 'template-parts/luxurious-banquet', 'none' ); ?>
 	</main><!-- #main -->
 
 <?php
