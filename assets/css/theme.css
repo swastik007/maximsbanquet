@@ -429,4 +429,75 @@ h1, h2, h3, h4, h5 {
 }
 .image-divider .image-overlay .portfolio-link:hover span {
   text-decoration: underline;
+}
+
+.menu {
+  background: #111;
+  color: #eee;
+}
+.menu .section-title {
+  text-align: left;
+}
+.menu .section-title .subtitle {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #c7a450;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 2px solid #c7a450;
+  margin-bottom: 10px;
+}
+.menu .section-title .title {
+  font-size: 36px;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  color: #f2d48a;
+}
+.menu .nav-link {
+  color: #ccc;
+  font-weight: 500;
+  padding: 8px 14px;
+}
+.menu .nav-link.active {
+  color: #c7a450;
+  border-bottom: 2px solid #c7a450;
+}
+.menu .nav-link:hover {
+  color: #f2d48a;
+}
+.menu .menu-item {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+.menu .menu-item:hover {
+  background-color: #222;
+}
+.menu .menu-item .menu-img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #333;
+}
+.menu .menu-item .menu-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+.menu .menu-item .menu-desc {
+  font-size: 14px;
+  font-style: italic;
+  color: #aaa;
+  margin: 4px 0 0;
+}
+.menu .menu-item .menu-price {
+  font-weight: bold;
+  color: #f2d48a;
+  margin-left: auto;
 }/*# sourceMappingURL=theme.css.map */
