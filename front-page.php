@@ -11,14 +11,22 @@ get_header();
 	<main id="primary" class="site-main">
 
 		<!-- top-slider section area -->
-    	<?php get_template_part( 'template-parts/slider', 'none' ); ?>
+    	
     	<!-- top-slider section area --> 
 		
+    	<!-- top-slider section area --> 
     	<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
-    	<?php get_template_part( 'template-parts/client-message', 'none' ); ?>
-    	<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
-    	<?php get_template_part( 'template-parts/our-team', 'none' ); ?>
+    	<!-- top-slider section area --> 
 
+    	<!-- top-slider section area --> 
+    	<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
+    	<!-- top-slider section area --> 
+		
+    	<!-- top-slider section area --> 
+    	<?php get_template_part( 'template-parts/banner', 'none' ); ?>
+    	<!-- top-slider section area --> 
+
+		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
 	</main><!-- #main -->
 
 <?php
