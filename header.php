@@ -25,17 +25,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'maxims-banquet' ); ?></a>
 
-	<nav class="navbar navbar-expand-lg custom-navbar">
+	<nav class="navbar navbar-expand-lg dark-navbar">
   <div class="container">
-    <a class="navbar-brand" href="#">Maxims Banquet</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand text-warning fw-bold" href="#">Maxims Banquet</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+
+    <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+      
+      <!-- Centered Menu -->
+      <ul class="navbar-nav mx-auto text-center">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
@@ -44,12 +48,18 @@
           <a class="nav-link" href="#">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#">Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
+
+      <!-- Book Now Button -->
+      <div class="d-none d-lg-block">
+        <a href="#book" class="btn btn-warning fw-semibold">Book Now</a>
+      </div>
     </div>
   </div>
 </nav>
+
