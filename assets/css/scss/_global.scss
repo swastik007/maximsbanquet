@@ -1,4 +1,51 @@
-body{
-    background-color: #000;
-    color: #fff;    
+$primary: #c7a450;
+$secondary: #8a693b;
+$text: #fff;
+$background: #111;
+
+h1,
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+h3,
+h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+h5,
+h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+.btn {
+  color: $text;
+  font-size: 1rem;
+  background-color: $primary;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    color: #222;
+    font-size: 1rem;
+    background-color: $text;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid $secondary;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
 }

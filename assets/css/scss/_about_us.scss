@@ -1,5 +1,5 @@
 .about-section {
-  background-color: #e6e4df;
+  background-color: #111;
   padding: 4rem 1rem;
 
   .container {
@@ -42,12 +42,13 @@
       text-transform: uppercase;
       font-size: 0.75rem;
       letter-spacing: 1px;
-      color: #000;
+      color: #f2d48a;
       margin-bottom: 1rem;
       display: block;
     }
 
     .headline {
+      color: $text;
       font-size: 2rem;
       line-height: 1.4;
       font-weight: 500;
@@ -60,6 +61,7 @@
     }
 
     .italic-intro {
+      color: #c7a450;
       font-style: italic;
       font-size: 1.125rem;
       line-height: 1.6;

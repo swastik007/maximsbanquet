@@ -1,0 +1,52 @@
+.our-team-section {
+  background-color: #000;
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d4af37; // Gold-like
+  }
+
+  .team-card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h5 {
+      font-size: 1.25rem;
+    }
+
+    .overlay a i {
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .overlay a:hover i {
+      color: #f0c14b;
+    }
+  }
+}
