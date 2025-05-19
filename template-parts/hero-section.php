@@ -4,15 +4,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start text-container">
-        <h2 class="hero-heading">Welcome to <span>Restaurantly</span></h2>
+        <h2 class="hero-heading">Welcome to <span>Maxim's Banquet and Events</span></h2>
         <p class="hero-subheading">Delivering great food for more than 18 years!</p>
         <div class="hero-buttons d-flex mt-4">
-          <a href="#menu" class="cta-btn">Our Menu</a>
-          <a href="#book-a-table" class="cta-btn">Book a Table</a>
+          <a href="#menu" class="btn">Our Menu</a>
+          <a href="#book" class="btn">Book a Table</a>
         </div>
       </div>
       <div class="col-lg-4 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
-        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a>
       </div>
     </div>
   </div>

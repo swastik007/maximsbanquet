@@ -193,7 +193,8 @@ function maxims_enqueue_custom_assets() {
 	wp_enqueue_style( 'maxims-styles', get_template_directory_uri() . '/assets/css/theme.css', array(), null );
 		
 	// Bootstrap JS (includes Popper.js)
-	wp_enqueue_script( 'bootstrap-js', '/assets/js/bootstrap.bundle.min.js', array(), null, true );
+	// wp_enqueue_script( 'bootstrap-js', '/assets/js/bootstrap.bundle.min.js', array(), null, true );
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), null, true );
 
 	// Custom JS
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/main.js', array(), filemtime(get_template_directory() . '/assets/js/main.js'), true );
