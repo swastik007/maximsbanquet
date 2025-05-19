@@ -137,17 +137,17 @@ add_action( 'widgets_init', 'maxims_banquet_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-// function maxims_banquet_scripts() {
-// 	wp_enqueue_style( 'maxims-banquet-style', get_stylesheet_uri(), array(), _S_VERSION );
-// 	wp_style_add_data( 'maxims-banquet-style', 'rtl', 'replace' );
+function maxims_banquet_scripts() {
+	wp_enqueue_style( 'maxims-banquet-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'maxims-banquet-style', 'rtl', 'replace' );
 
-// 	wp_enqueue_script( 'maxims-banquet-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'maxims-banquet-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
-// 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-// 		wp_enqueue_script( 'comment-reply' );
-// 	}
-// }
-// add_action( 'wp_enqueue_scripts', 'maxims_banquet_scripts' );
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'maxims_banquet_scripts' );
 
 /**
  * Implement the Custom Header feature.
@@ -191,18 +191,36 @@ function maxims_enqueue_custom_assets() {
 
 	// Custom CSS
 	wp_enqueue_style( 'maxims-styles', get_template_directory_uri() . '/assets/css/theme.css', array(), null );
-		
+	// Your main stylesheet (compiled SCSS to CSS)
+	// wp_enqueue_style( 'maxims-banquet-style', get_template_directory_uri() . '/assets/css/theme.css', array(), filemtime(get_template_directory() . '/assets/css/theme.css') );
+	
 	// Bootstrap JS (includes Popper.js)
 	wp_enqueue_script( 'bootstrap-js', '/assets/js/bootstrap.bundle.min.js', array(), null, true );
 
 	// Custom JS
 	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/assets/js/main.js', array(), filemtime(get_template_directory() . '/assets/js/main.js'), true );
 
-	wp_enqueue_style('aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css');
-  	wp_enqueue_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], null, true);
+	// Swiper CSS & JS
+wp_enqueue_style( 'swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css' );
+wp_enqueue_script( 'swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), null, true );
 
-  	// Initialize AOS
-  	wp_add_inline_script('aos-js', 'AOS.init();');
+wp_add_inline_script( 'swiper-js', "
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+" );
+
 }
 add_action( 'wp_enqueue_scripts', 'maxims_enqueue_custom_assets' );
 
