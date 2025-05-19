@@ -265,12 +265,13 @@ h1, h2, h3, h4, h5 {
   max-height: 450px;
 }
 .about-section .about-content .subtitle {
-  text-transform: uppercase;
-  font-size: 0.75rem;
+  font-size: 14px;
   letter-spacing: 1px;
-  color: #f2d48a;
-  margin-bottom: 1rem;
-  display: block;
+  color: #c7a450;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 2px solid #c7a450;
+  margin-bottom: 10px;
 }
 .about-section .about-content .headline {
   color: #fff;

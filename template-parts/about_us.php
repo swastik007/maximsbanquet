@@ -8,7 +8,7 @@
 
       <!-- Main Content -->
       <div class="about-content" data-aos="fade-up" data-aos-delay="200">
-        <small class="subtitle">About Katrina Otter Weddings</small>
+        <span class="subtitle">About Katrina Otter Weddings</span>
         <h3 class="headline">
           Since 2013 we’ve been planning, managing and delivering
           <em>beautifully designed</em>, award-winning weddings in the most inspiring of settings.
