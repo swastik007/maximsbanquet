@@ -150,6 +150,7 @@ function maxims_banquet_scripts() {
 
 	// Bootstrap JS (includes Popper.js)
 	wp_enqueue_script( 'bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), null, true );
+	
 
 	// Theme navigation script
 	wp_enqueue_script( 'maxims-banquet-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
