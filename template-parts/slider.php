@@ -10,21 +10,21 @@
     <div id="banquetSlider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide1.jpg" class="d-block w-100" alt="Banquet Hall">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-1.jpg" class="d-block w-100" alt="Banquet Hall">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Elegant Banquet Hall</h3>
                     <p>Make your events memorable</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide2.jpg" class="d-block w-100" alt="Catering">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-2.jpg" class="d-block w-100" alt="Catering">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Delicious Catering</h3>
                     <p>Fine dining at your service</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/slide3.jpg" class="d-block w-100" alt="Events">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery-3.jpg" class="d-block w-100" alt="Events">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>Perfect Events</h3>
                     <p>Celebrate your special day in style</p>
