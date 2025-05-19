@@ -15,7 +15,7 @@ get_header();
     	<!-- top-slider section area --> 
 		
     	<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
-
+    	<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
 	</main><!-- #main -->
 
 <?php
