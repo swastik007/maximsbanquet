@@ -26,8 +26,11 @@ get_header();
     	<?php get_template_part( 'template-parts/banner', 'none' ); ?>
     	<!-- top-slider section area --> 
 
+		<?php get_template_part( 'template-parts/services', 'none' ); ?>
 		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
 		<?php get_template_part( 'template-parts/menu-section', 'none' ); ?>
+		<?php get_template_part( 'template-parts/gallery', 'none' ); ?>
+		<?php get_template_part( 'template-parts/testimonials', 'none' ); ?>
 	</main><!-- #main -->
 
 <?php
