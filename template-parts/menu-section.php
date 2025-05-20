@@ -21,27 +21,27 @@
       <?php
       $menu_items = [
         'All' => [
-          ['title' => 'Chicken Momo', 'desc' => 'Steamed dumplings filled with minced chicken and spices', 'price' => 'रु 250', 'img' => 'momo.jpg'],
+          ['title' => 'Chicken Momo', 'desc' => 'Steamed dumplings filled with minced chicken and spices', 'price' => 'रु 250', 'img' => 'chicken-momo.jpg'],
           ['title' => 'Veg Samosa', 'desc' => 'Crispy pastry filled with spiced potatoes and peas', 'price' => 'रु 120', 'img' => 'samosa.jpg'],
           ['title' => 'Chicken Sekuwa', 'desc' => 'Char-grilled marinated chicken cubes with Nepali herbs', 'price' => 'रु 350', 'img' => 'sekuwa.jpg'],
           ['title' => 'Paneer Butter Masala', 'desc' => 'Paneer in rich tomato cream sauce', 'price' => 'रु 480', 'img' => 'paneer.jpg'],
-          ['title' => 'Chicken Biryani', 'desc' => 'Aromatic basmati rice with spiced chicken', 'price' => 'रु 550', 'img' => 'biryani.jpg'],
+          ['title' => 'Chicken Biryani', 'desc' => 'Aromatic basmati rice with spiced chicken', 'price' => 'रु 550', 'img' => 'chicken-biryani.jpg'],
           ['title' => 'Dal Bhat Tarkari', 'desc' => 'Traditional Nepali meal with lentils, rice & vegetables', 'price' => 'रु 400', 'img' => 'dalbhat.jpg'],
-          ['title' => 'Mutton Curry', 'desc' => 'Spicy tender mutton cooked in rich gravy', 'price' => 'रु 600', 'img' => 'mutton.jpg'],
+          ['title' => 'Mutton Curry', 'desc' => 'Spicy tender mutton cooked in rich gravy', 'price' => 'रु 600', 'img' => 'mutton-curry.jpg'],
         ],
         'Starters' => [
-          ['title' => 'Chicken Momo', 'desc' => 'Steamed dumplings filled with minced chicken and spices', 'price' => 'रु 250', 'img' => 'momo.jpg'],
+          ['title' => 'Chicken Momo', 'desc' => 'Steamed dumplings filled with minced chicken and spices', 'price' => 'रु 250', 'img' => 'chicken-momo.jpg'],
           ['title' => 'Veg Samosa', 'desc' => 'Crispy pastry filled with spiced potatoes and peas', 'price' => 'रु 120', 'img' => 'samosa.jpg'],
           ['title' => 'Chicken Sekuwa', 'desc' => 'Char-grilled marinated chicken cubes with Nepali herbs', 'price' => 'रु 350', 'img' => 'sekuwa.jpg'],
         ],
         'Main Course' => [
           ['title' => 'Paneer Butter Masala', 'desc' => 'Paneer in rich tomato cream sauce', 'price' => 'रु 480', 'img' => 'paneer.jpg'],
-          ['title' => 'Chicken Biryani', 'desc' => 'Aromatic basmati rice with spiced chicken', 'price' => 'रु 550', 'img' => 'biryani.jpg'],
+          ['title' => 'Chicken Biryani', 'desc' => 'Aromatic basmati rice with spiced chicken', 'price' => 'रु 550', 'img' => 'chicken-biryani.jpg'],
           ['title' => 'Dal Bhat Tarkari', 'desc' => 'Traditional Nepali meal with lentils, rice & vegetables', 'price' => 'रु 400', 'img' => 'dalbhat.jpg'],
         ],
         'Specialty' => [
-          ['title' => 'Mutton Curry', 'desc' => 'Spicy tender mutton cooked in rich gravy', 'price' => 'रु 600', 'img' => 'mutton.jpg'],
-          ['title' => 'Chicken Biryani', 'desc' => 'Aromatic basmati rice with spiced chicken', 'price' => 'रु 550', 'img' => 'biryani.jpg'],
+          ['title' => 'Mutton Curry', 'desc' => 'Spicy tender mutton cooked in rich gravy', 'price' => 'रु 600', 'img' => 'mutton-curry.jpg'],
+          ['title' => 'Chicken Biryani', 'desc' => 'Aromatic basmati rice with spiced chicken', 'price' => 'रु 550', 'img' => 'chicken-biryani.jpg'],
         ]
       ];
 
