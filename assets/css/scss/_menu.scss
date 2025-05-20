@@ -1,0 +1,81 @@
+.menu {
+  background: #111;
+  color: #eee;
+
+  .section-title {
+    text-align: left;
+
+    .subtitle {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #c7a450;
+      text-transform: uppercase;
+      display: inline-block;
+      border-bottom: 2px solid #c7a450;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-size: 36px;
+      font-family: "Georgia", serif;
+      font-weight: 700;
+      color: #f2d48a;
+    }
+  }
+
+  .nav-link {
+    color: #ccc;
+    font-weight: 500;
+    padding: 8px 14px;
+
+    &.active {
+      color: #c7a450;
+      border-bottom: 2px solid #c7a450;
+    }
+
+    &:hover {
+      color: #f2d48a;
+    }
+  }
+
+  .menu-item {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background-color: #222;
+    }
+
+    .menu-img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #333;
+    }
+
+    .menu-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      color: #fff;
+    }
+
+    .menu-desc {
+      font-size: 14px;
+      font-style: italic;
+      color: #aaa;
+      margin: 4px 0 0;
+    }
+
+    .menu-price {
+      font-weight: bold;
+      color: #f2d48a;
+      margin-left: auto;
+    }
+  }
+}

@@ -29,6 +29,7 @@ get_header();
 
 		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
 		<?php get_template_part( 'template-parts/our-team', 'none' ); ?>
+		<?php get_template_part( 'template-parts/menu-section', 'none' ); ?>
 	</main><!-- #main -->
 
 <?php
