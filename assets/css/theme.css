@@ -57,112 +57,94 @@ h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif;
 }
 
-.header.transparent-header {
-  background: transparent;
-  position: absolute;
+.main-header {
+  background-color: #111;
+  color: #fff;
   width: 100%;
-  z-index: 1000;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+  position: fixed;
 }
-.header .container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1rem;
+.main-header .site-logo img {
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.header .header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header .header-row .menu.menu-left .menu-list, .header .header-row .menu.menu-right .menu-list {
+.main-header .nav-list {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
-.header .header-row .menu.menu-left .menu-list li, .header .header-row .menu.menu-right .menu-list li {
-  position: relative;
-}
-.header .header-row .menu.menu-left .menu-list li a, .header .header-row .menu.menu-right .menu-list li a {
-  color: white;
-  text-decoration: none;
+.main-header .nav-list li a {
+  color: #fff;
+  text-transform: uppercase;
   font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
   transition: color 0.3s;
 }
-.header .header-row .menu.menu-left .menu-list li a:hover, .header .header-row .menu.menu-right .menu-list li a:hover {
-  color: var(--primary-color);
+.main-header .nav-list li a:hover, .main-header .nav-list li a.current-menu-item a {
+  color: #c7a450;
 }
-.header .header-row .menu.menu-left .menu-list li ul, .header .header-row .menu.menu-right .menu-list li ul {
-  display: none;
+.main-header .nav-list li a::after {
+  content: "";
   position: absolute;
-  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #c7a450;
   left: 0;
-  background: white;
-  padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
+  bottom: 0;
+  transition: width 0.3s;
 }
-.header .header-row .menu.menu-left .menu-list li ul li a, .header .header-row .menu.menu-right .menu-list li ul li a {
-  color: black;
+.main-header .nav-list li a:hover::after {
+  width: 100%;
 }
-.header .header-row .menu.menu-left .menu-list li:hover > ul, .header .header-row .menu.menu-right .menu-list li:hover > ul {
-  display: block;
-}
-.header .header-row .logo {
-  flex: 0 0 auto;
-}
-.header .header-row .logo img {
-  height: 70px;
-}
-.header .header-row .mobile-menu-toggle {
-  display: none;
+.main-header .mobile-menu-toggle {
   background: none;
   border: none;
 }
-.header .header-row .mobile-menu-toggle .burger {
+.main-header .mobile-menu-toggle .burger,
+.main-header .mobile-menu-toggle .burger::before,
+.main-header .mobile-menu-toggle .burger::after {
+  display: block;
   width: 25px;
-  height: 2px;
-  background: white;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s;
+  content: "";
   position: relative;
 }
-.header .header-row .mobile-menu-toggle .burger::before, .header .header-row .mobile-menu-toggle .burger::after {
+.main-header .mobile-menu-toggle .burger::before {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 2px;
-  background: white;
-}
-.header .header-row .mobile-menu-toggle .burger::before {
   top: -8px;
 }
-.header .header-row .mobile-menu-toggle .burger::after {
+.main-header .mobile-menu-toggle .burger::after {
+  content: "";
+  position: absolute;
   top: 8px;
 }
-.header .mobile-menu {
+.main-header .mobile-nav {
   display: none;
-  background: #fff;
-  padding: 2rem;
+  background-color: #111;
+  padding: 1.5rem;
 }
-.header .mobile-menu .mobile-menu-list {
-  list-style: none;
-}
-.header .mobile-menu .mobile-menu-list li {
+.main-header .mobile-nav .mobile-nav-list li {
   margin-bottom: 1rem;
 }
-.header .mobile-menu .mobile-menu-list li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+.main-header .mobile-nav .mobile-nav-list li a {
+  color: #fff;
+  font-size: 18px;
+  display: block;
 }
-@media (max-width: 768px) {
-  .header .menu-left,
-  .header .menu-right {
-    display: none;
-  }
-  .header .mobile-menu-toggle {
-    display: block;
-  }
-  .header .mobile-menu {
-    display: block;
-  }
+.main-header .mobile-nav .mobile-nav-list li a:hover {
+  color: #c7a450;
+}
+.main-header.sticky {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  background-color: #111;
 }
 
 .specials {
