@@ -1,0 +1,98 @@
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 150vh;
+  overflow: hidden;
+
+  .hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fade 15s infinite;
+    }
+
+    .slide:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .slide:nth-child(2) {
+      animation-delay: 5s;
+    }
+    .slide:nth-child(3) {
+      animation-delay: 10s;
+    }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+
+    .hero-text {
+      background: rgba(58, 54, 54, 0.6);
+      border: 1px solid rgba(199, 164, 80, 0.5);
+      border-radius: 1rem;
+      padding: 2rem 3rem;
+      color: #fff;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      animation: popIn 1.2s ease-out both;
+
+      h1 {
+        font-size: 2.5rem;
+        color: #c7a450;
+        font-family: "Georgia", serif;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #f5f5f5;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+    }
+  }
+}

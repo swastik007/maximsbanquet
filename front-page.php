@@ -20,18 +20,17 @@ get_header();
     	<!-- top-slider section area --> 
 
     	<!-- top-slider section area --> 
-    	<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
+    	
+		<?php get_template_part( 'template-parts/try-about', 'none' ); ?>
     	<!-- top-slider section area --> 
 		
     	<!-- top-slider section area --> 
     	<?php get_template_part( 'template-parts/banner', 'none' ); ?>
     	<!-- top-slider section area --> 
 
+		<?php get_template_part( 'template-parts/services', 'none' ); ?>
+		<?php get_template_part( 'template-parts/services-overview', 'none' ); ?>
 		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
-		<?php get_template_part( 'template-parts/our-team', 'none' ); ?>
-		<?php get_template_part( 'template-parts/banner', 'none' ); ?>
-		<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
-		<?php get_template_part( 'template-parts/luxurious-banquet', 'none' ); ?>
 	</main><!-- #main -->
 
 <?php

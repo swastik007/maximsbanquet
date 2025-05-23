@@ -1,0 +1,164 @@
+.services {
+  background-color: $background;
+  padding: 5rem 0;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    .subtitle {
+      color: $primary;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      color: $text;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .services-wrapper {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .services-slider {
+    padding: 1rem 0;
+  }
+
+  .services-cards {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .swiper-slide {
+    width: 300px !important;
+    flex-shrink: 0;
+  }
+
+  .service-card {
+    height: 100%;
+    background: #3d3d3d;
+    color: $text;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid $primary;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 20px rgba(121, 105, 22, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1.25rem;
+      height: 1.25rem;
+      background: #886d0c;
+      border: 2px solid $primary;
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+      border-bottom: none;
+      border-right: none;
+      border-top-left-radius: 0.5rem;
+      transform: translate(-1px, -1px);
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      border-top: none;
+      border-left: none;
+      border-bottom-right-radius: 0.5rem;
+      transform: translate(1px, 1px);
+    }
+
+    .icon {
+      font-size: 2.2rem;
+      color: $primary;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: $primary;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #ccc;
+      margin-top: auto;
+    }
+
+    &:hover {
+      background: $primary;
+      color: #111;
+
+      .icon,
+      h3,
+      p {
+        color: #111;
+      }
+
+      &::before,
+      &::after {
+        background: $primary;
+        border-color: #111;
+      }
+    }
+  }
+
+  .highlights {
+    text-align: center;
+    margin-top: 4rem;
+
+    h3 {
+      color: $primary;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: inline-block;
+      text-align: left;
+
+      li {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: $text;
+
+        &::before {
+          content: "✅";
+          position: absolute;
+          left: 0;
+          color: $primary;
+        }
+
+        strong {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
