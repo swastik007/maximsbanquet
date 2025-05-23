@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/gallery-1.jpg')">
+      <div class="carousel-caption">
+        <h1 class="hero-title">Maxim’s Banquet</h1>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/gallery-1.jpg')">
+      <div class="carousel-caption">
+        <h1 class="hero-title">Elegant Events</h1>
+      </div>
+    </div>
+    <div class="carousel-item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/gallery-1.jpg')">
+      <div class="carousel-caption">
+        <h1 class="hero-title">Unforgettable Moments</h1>
+      </div>
+    </div>
+    <!-- Add more slides as needed -->
+  </div>
+</div>
+>>>>>>> 84015567f22b8e7ae6c40d30b9df8629b1b29edb
 <section id="hero" class="hero section dark-background">
   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/home.jpg" alt="Hero background" class="hero-bg" />
 

@@ -1,51 +1,31 @@
+<<<<<<< HEAD
 $primary: #c7a450;
 $secondary: #8a693b;
 $text: #fff;
 $background: #111;
+=======
+body{
+    background-color: #000;
+    color: #fff;    
+}
+.section-title {
+  text-align: left;
+>>>>>>> 84015567f22b8e7ae6c40d30b9df8629b1b29edb
 
-h1,
-h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-h3,
-h4 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-h5,
-h6 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-p {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-bottom: 2px;
-}
-.btn {
-  color: $text;
-  font-size: 1rem;
-  background-color: $primary;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid #ccc;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: background 0.3s;
-
-  &:hover {
-    color: #222;
-    font-size: 1rem;
-    background-color: $text;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid $secondary;
-    text-transform: uppercase;
+  .subtitle {
+    font-size: 14px;
     letter-spacing: 1px;
-    text-decoration: none;
-    transition: background 0.3s;
+    color: #c7a450;
+    text-transform: uppercase;
+    display: inline-block;
+    border-bottom: 2px solid #c7a450;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    color: #f2d48a;
   }
 }
