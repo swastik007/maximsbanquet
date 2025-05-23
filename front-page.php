@@ -13,7 +13,6 @@ get_header();
 		<!-- top-slider section area -->
     	
     	<!-- top-slider section area --> 
-		<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
 		
     	<!-- top-slider section area --> 
     	<?php get_template_part( 'template-parts/hero-section', 'none' ); ?>
@@ -29,6 +28,7 @@ get_header();
     	<!-- top-slider section area --> 
 
 		<?php get_template_part( 'template-parts/services', 'none' ); ?>
+		<?php get_template_part( 'template-parts/menu-section', 'none' ); ?>
 		<?php get_template_part( 'template-parts/services-overview', 'none' ); ?>
 		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
 	</main><!-- #main -->
