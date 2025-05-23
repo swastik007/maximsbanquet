@@ -19,7 +19,8 @@ get_header();
     	<!-- top-slider section area --> 
 
     	<!-- top-slider section area --> 
-    	<?php get_template_part( 'template-parts/about_us', 'none' ); ?>
+    	
+		<?php get_template_part( 'template-parts/try-about', 'none' ); ?>
     	<!-- top-slider section area --> 
 		
     	<!-- top-slider section area --> 
@@ -27,10 +28,17 @@ get_header();
     	<!-- top-slider section area --> 
 
 		<?php get_template_part( 'template-parts/services', 'none' ); ?>
+		<?php get_template_part( 'template-parts/services-overview', 'none' ); ?>
 		<?php get_template_part( 'template-parts/special-section', 'none' ); ?>
 		<?php get_template_part( 'template-parts/menu-section', 'none' ); ?>
+		<?php get_template_part( 'template-parts/try-hero-section', 'none' ); ?>
 		<?php get_template_part( 'template-parts/gallery', 'none' ); ?>
+		<?php get_template_part( 'template-parts/intro-text', 'none' ); ?>
 		<?php get_template_part( 'template-parts/testimonials', 'none' ); ?>
+		
+		<?php get_template_part( 'template-parts/', 'none' ); ?>
+
+
 	</main><!-- #main -->
 
 <?php

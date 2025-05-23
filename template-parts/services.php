@@ -1,9 +1,9 @@
 <section class="services" id="services">
   <div class="container">
-    <div class="section-title">
+    <!-- <div class="section-title">
       <span class="subtitle">We Provide</span>
       <h2 class="title">One-stop Solution</h2>
-    </div>
+    </div> -->
 
     <div class="services-wrapper">
       <div class="swiper services-slider">
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="highlights">
+    <!-- <div class="highlights">
       <h3>Event Highlights</h3>
       <ul>
         <li><strong>Spacious hall</strong> with capacity up to 1000 guests</li>
@@ -64,7 +64,7 @@
         <li><strong>Full DJ & sound</strong> with dance floor</li>
         <li><strong>Outstanding hospitality</strong> & many more…</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </section>
 

@@ -2,7 +2,7 @@
   <div class="image-bg"></div>
   <div class="image-overlay">
     <a href="/portfolio" class="portfolio-link">
-      <h5>view our <span>PORTFOLIO</span></h5>
+      <strong>We Peovide One Stop Solution</strong>
     </a>
   </div>
 </section>
