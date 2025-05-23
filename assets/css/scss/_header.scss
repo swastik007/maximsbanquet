@@ -1,15 +1,19 @@
 .main-header {
-  background-color: #111;
-  color: #fff;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 1000;
   transition: all 0.3s ease;
-  position: fixed;
+  background: transparent;
+
+  &.sticky {
+    background-color: #111;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  }
 
   .site-logo img {
-    height: 60px;
+    height: 65px;
     object-fit: contain;
   }
 
@@ -23,11 +27,9 @@
       text-transform: uppercase;
       font-weight: 500;
       position: relative;
-      padding-bottom: 5px;
-      transition: color 0.3s;
+      transition: color 0.3s ease;
 
-      &:hover,
-      &.current-menu-item a {
+      &:hover {
         color: #c7a450;
       }
 
@@ -36,10 +38,10 @@
         position: absolute;
         width: 0;
         height: 2px;
-        background: #c7a450;
+        bottom: -4px;
         left: 0;
-        bottom: 0;
-        transition: width 0.3s;
+        background: #c7a450;
+        transition: width 0.3s ease;
       }
 
       &:hover::after {
@@ -51,16 +53,16 @@
   .mobile-menu-toggle {
     background: none;
     border: none;
+    z-index: 1001;
 
     .burger,
     .burger::before,
     .burger::after {
       display: block;
-      width: 25px;
+      width: 26px;
       height: 3px;
       background-color: #fff;
       transition: all 0.3s;
-      content: "";
       position: relative;
     }
 
@@ -79,8 +81,12 @@
 
   .mobile-nav {
     display: none;
-    background-color: #111;
+    background: #111;
     padding: 1.5rem;
+
+    &.show {
+      display: block;
+    }
 
     .mobile-nav-list {
       li {
@@ -89,7 +95,6 @@
         a {
           color: #fff;
           font-size: 18px;
-          display: block;
 
           &:hover {
             color: #c7a450;
@@ -97,10 +102,5 @@
         }
       }
     }
-  }
-
-  &.sticky {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    background-color: #111;
   }
 }
